@@ -18,7 +18,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/Automation-Playground" element={<Home />} />
         <Route path="/component/modal" element={<Modal />} />
         <Route path="/component/alert" element={<Alert />} />
         <Route path="/component/dropdowns" element={<Dropdowns />} />
@@ -26,7 +26,6 @@ function App() {
         <Route path="/component/newtab" element={<NewTab />} />
         <Route path="/component/radiobutton" element={<RadioButton />} />
         <Route path="/component/shadowdom" element={<ShadowDom />} />
-        <Route path="/component/typetext" element={<TypeText />} />
         <Route path="/component/typetext" element={<TypeText />} />
         <Route path="/component/looping" element={<Looping />} />
         <Route path="/component/newwindow" element={<NewWindow />} />
