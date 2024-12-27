@@ -6,11 +6,10 @@ function Alert() {
       <h1>Alert</h1>
       <p>Learn to handle alerts in your application.</p>
       <button
+        className="component-button"
         id="alertButton"
         aria-label="Show Alert"
-        onClick={() => alert("This is an alert message!")}
-        style={{ marginTop: "20px", padding: "10px 20px", fontSize: "16px" }}
-      >
+        onClick={() => alert("This is an alert message!")}>
         Show Alert
       </button>
     </div>

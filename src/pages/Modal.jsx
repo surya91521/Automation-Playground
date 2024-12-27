@@ -1,33 +1,37 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
+import { Button, Modal } from 'react-bootstrap'; 
+import 'bootstrap/dist/css/bootstrap.min.css'; 
 
-function Modal() {
-  const [isOpen, setIsOpen] = useState(false);
+function MyModal() {
+  const [show, setShow] = useState(false);
 
-  const openModal = () => {
-    setIsOpen(true);
-  };
-
-  const closeModal = () => {
-    setIsOpen(false);
-  };
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
 
   return (
     <div style={{ textAlign: "center", padding: "20px" }}>
-      <h1 title="pageTitle">Modals</h1>
+      <h1 title="pageTitle">Modal</h1>
       <p>Learn to handle Modals in your application.</p>
-      <button onClick={openModal}>Show Modal</button>
-      {isOpen && (
-        <div style={{ position: "fixed", top: "50%", left: "50%", transform: "translate(-50%, -50%)", backgroundColor: "white", padding: "20px", boxShadow: "0 0 10px rgba(0,0,0,0.5)" }}>
-          <h2 title="modalTitle">Modal Content</h2>
-          <p description="modalContent">This is the content of the modal.</p>
-          <button onClick={closeModal} id="backButton">Close Modal</button>
-        </div>
-      )}
+      <Button variant="primary" onClick={handleShow}>
+        Open modal
+      </Button>
+
+      <Modal show={show} onHide={handleClose}>
+        <Modal.Header closeButton>
+          <Modal.Title>Modal Title</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>This is the text which is present inside the modal. </Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleClose}>
+            Close
+          </Button>
+          <Button variant="primary" onClick={handleClose}>
+            Save Changes
+          </Button>
+        </Modal.Footer>
+      </Modal>
     </div>
   );
 }
 
-export default Modal;
-
-
-
+export default MyModal;

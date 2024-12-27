@@ -1,0 +1,19 @@
+.component-button {
+  padding: 10px 20px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: #f1f1f1;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.component-button:hover {
+  background: #007bff;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.component-button:focus {
+  outline: 2px solid #007bff;
+}
