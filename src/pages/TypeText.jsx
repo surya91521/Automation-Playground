@@ -2,7 +2,9 @@ import React from "react";
 
 function TypeText() {
   return (
-    <div style={{ textAlign: "center", padding: "20px" }}>
+    <div className="container" style={{ textAlign: "center", padding: "20px" }}>
+      <h1 title="pageTitle">Type Text</h1>
+      <br />
       <div>
         <div style={{ marginBottom: "10px" }}>
           <label htmlFor="input1" style={{ marginRight: "10px" }}>Title 1</label>

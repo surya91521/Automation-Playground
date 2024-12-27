@@ -9,6 +9,9 @@ import NewTab from "./pages/NewTab";
 import RadioButton from "./pages/RadioButton";
 import ShadowDom from "./pages/ShadowDom";
 import TypeText from "./pages/TypeText";
+import Looping from "./pages/Looping";
+import NewWindow from "./pages/NewWindow";
+import FileUpload from "./pages/FileUpload";
 // Import other components as needed
 
 function App() {
@@ -24,6 +27,10 @@ function App() {
         <Route path="/component/radiobutton" element={<RadioButton />} />
         <Route path="/component/shadowdom" element={<ShadowDom />} />
         <Route path="/component/typetext" element={<TypeText />} />
+        <Route path="/component/typetext" element={<TypeText />} />
+        <Route path="/component/looping" element={<Looping />} />
+        <Route path="/component/newwindow" element={<NewWindow />} />
+        <Route path="/component/fileupload" element={<FileUpload />} />
         {/* Add more routes here */}
         <Route path="*" element={<h1>Page Not Found</h1>} />
       </Routes>
