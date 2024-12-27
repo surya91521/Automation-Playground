@@ -12,6 +12,8 @@ const components = [
   { name: "DROPDOWNS", path: "dropdown" },
   { name: "NEW TAB", path: "newtab" },
   { name: "RADIO BUTTONS", path: "radiobutton" },
+  { name: "LOOPING", path: "looping" },
+  { name: "FILE UPLOAD", path: "fileupload" },
   // Add more components as needed
 ];
 
@@ -21,10 +23,12 @@ function Home() {
   return (
     <div className="container">
       <header>
-        <h1>Welcome to Automation Playground!</h1>
-        <p>
-          Use this test to test your Low Code Automation tool. As it has various cases and many types of elements on which you can validate the proficiency of your tool.
-        </p>
+        <h1>Welcome to Automation Playground!</h1><br></br>
+        <p>Use this website to test your Low Code Automation tool.</p>
+        <p> As it has various cases and many types of elements on which you can validate the proficiency of your tool.</p>
+        <br></br>
+        <br></br>
+        <br></br>
       </header>
       <div className="components">
         {components.map((component, index) => (
