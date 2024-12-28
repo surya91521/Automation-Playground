@@ -1,18 +1,46 @@
-import React from "react";
+import React, { useState } from "react";
+import "../styles/radiobutton.css";
 
 function RadioButton() {
+  const [selectedOption, setSelectedOption] = useState(null);
+
+  const handleOptionChange = (event) => {
+    setSelectedOption(event.target.value);
+  };
+
   return (
-    <div style={{ textAlign: "center", padding: "20px" }}>
-      <h1>Alert</h1>
-      <p>Learn to handle alerts in your application.</p>
-      <button
-        id="alertButton"
-        aria-label="Show Alert"
-        onClick={() => alert("This is an alert message!")}
-        style={{ marginTop: "20px", padding: "10px 20px", fontSize: "16px" }}
-      >
-        Show Alert
-      </button>
+    <div className="container" style={{ textAlign: "center", padding: "20px" }}>
+      <h2>Radio Buttons</h2>
+      <br />
+      <div>
+        <input
+          type="radio"
+          value="Time"
+          checked={selectedOption === "Time"}
+          onChange={handleOptionChange}
+        />
+        <label htmlFor="option1">Time</label>
+      </div>
+      <div>
+        <input
+          type="radio"
+          value="Money"
+          checked={selectedOption === "Money"}
+          onChange={handleOptionChange}
+        />
+        <label htmlFor="option2">Money</label>
+      </div>
+      <div>
+        <input
+          type="radio"
+          value="Fame"
+          checked={selectedOption === "Fame"}
+          onChange={handleOptionChange}
+        />
+        <label htmlFor="option3">Fame</label>
+      </div>
+      <br />
+      <p>Selected Option: {selectedOption || "None"}</p>
     </div>
   );
 }
