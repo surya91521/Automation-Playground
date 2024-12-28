@@ -17,9 +17,22 @@ body {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 header h1 {
   font-size: 24px;
-  margin-bottom: 10px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
 }
 
 header p {
@@ -54,4 +67,23 @@ header p {
 
 .component-button:focus {
   outline: 2px solid #007bff;
+}
+
+.panel {
+  margin-top: 10px;
+  background: #f1f1f1;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.panel a {
+  display: block;
+  padding: 5px 0;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.panel a:hover {
+  text-decoration: underline;
 }
