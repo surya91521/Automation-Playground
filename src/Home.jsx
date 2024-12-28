@@ -9,7 +9,7 @@ const components = [
   { name: "IFRAME", path: "iframe" },
   { name: "SHADOWDOM", path: "shadowdom" },
   { name: "TYPE TEXT", path: "typetext" },
-  { name: "DROPDOWNS", path: "dropdown" },
+  { name: "DROPDOWNS", path: "dropdowns" },
   { name: "NEW TAB", path: "newtab" },
   { name: "RADIO BUTTONS", path: "radiobutton" },
   { name: "LOOPING", path: "looping" },
