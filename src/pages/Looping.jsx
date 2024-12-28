@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import BackButton from "../components/BackButton";
 
 function Looping() {
   const [count, setCount] = useState(0);
@@ -8,13 +9,17 @@ function Looping() {
 
   return (
     <div 
-      className="container"
-      style={{ 
-        textAlign: "center", 
-        padding: "20px", 
-        fontFamily: "Arial, sans-serif" 
-      }}
-    >
+        className="container"
+        style={{ 
+          textAlign: "center", 
+          padding: "20px", 
+          fontFamily: "Arial, sans-serif" 
+        }}
+      >
+      <BackButton />
+      <br />
+      <br />
+      <h1 title="pageTitle">Looping</h1>
       <h1>Looping examples</h1>
       <br/>
       <div 

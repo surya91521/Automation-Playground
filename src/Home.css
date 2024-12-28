@@ -20,7 +20,6 @@ body {
 .header-content {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 
 header h1 {
@@ -86,4 +85,10 @@ header p {
 
 .panel a:hover {
   text-decoration: underline;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
 }

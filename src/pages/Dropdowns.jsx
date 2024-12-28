@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import "../styles/dropdowns.css"; // Import your CSS file
+import BackButton from "../components/BackButton";
 
 function Dropdowns() {
   const [selectedOptions, setSelectedOptions] = useState([]);
@@ -19,7 +20,10 @@ function Dropdowns() {
   
   return (
     <div className="dropdown-container">
-      <h2>Dropdown Menus</h2>
+      <BackButton />
+      <br />
+      <br />
+      <h1>Dropdowns</h1>
       <br />
       {/* Basic Dropdown */}
       <div className="dropdown-section">

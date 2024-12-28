@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../styles/radiobutton.css";
+import BackButton from "../components/BackButton";
 
 function RadioButton() {
   const [selectedOption, setSelectedOption] = useState(null);
@@ -10,6 +11,9 @@ function RadioButton() {
 
   return (
     <div className="container" style={{ textAlign: "center", padding: "20px" }}>
+      <BackButton />
+      <br />
+      <br />
       <h2>Radio Buttons</h2>
       <br />
       <div>

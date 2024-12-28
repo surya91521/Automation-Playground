@@ -1,8 +1,12 @@
 import React from "react";
+import BackButton from "../components/BackButton";
 
 function TypeText() {
   return (
     <div className="container" style={{ textAlign: "center", padding: "20px" }}>
+      <BackButton />
+      <br />
+      <br />
       <h1 title="pageTitle">Type Text</h1>
       <br />
       <div>

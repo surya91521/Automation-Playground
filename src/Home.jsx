@@ -61,8 +61,10 @@ function Home() {
         )}
         <br />
         <h1>Welcome to Automation Playground!</h1>
+        <br />
         <p>Use this website to test your Low Code Automation tool.</p>
         <p>As it has various cases and many types of elements on which you can validate the proficiency of your tool.</p>
+        <br />
       </header>
       <div className="components">
         {components.map((component, index) => (

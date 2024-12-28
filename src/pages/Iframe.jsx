@@ -1,8 +1,13 @@
 import React from "react";
+import BackButton from "../components/BackButton";
 
 function Iframe() {
   return (
     <div style={{ textAlign: "center", padding: "20px" }}>
+      <BackButton />
+      <br />
+      <br />  
+      <h1 title="pageTitle">Iframes</h1>
       <iframe
         title="input-frame"
         style={{ width: "100%", height: "200px", border: "2px solid black" }}

@@ -1,4 +1,5 @@
 import React from "react";
+import BackButton from "../components/BackButton";
 
 function NewTab() {
   const openNewTab = () => {
@@ -11,6 +12,9 @@ function NewTab() {
 
   return (
     <div style={{ textAlign: "center", padding: "20px" }}>
+      <BackButton />
+      <br />
+      <br />
       <h1 title="pageTitle">New Tab</h1>
       <p>Learn to handle opening new tab.</p>
       <button

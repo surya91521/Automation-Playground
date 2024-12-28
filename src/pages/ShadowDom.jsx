@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from "react";
+import BackButton from "../components/BackButton";
 
 function ShadowDom() {
   const shadowHostRef = useRef(null);
@@ -73,6 +74,9 @@ function ShadowDom() {
 
   return (
     <div className="container">
+      <BackButton />
+      <br />
+      <br />
       <div ref={shadowHostRef} style={{ textAlign: "center", padding: "20px" }}></div>
     </div>
   );

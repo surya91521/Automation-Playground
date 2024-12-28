@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Button, Modal } from 'react-bootstrap'; 
+import BackButton from '../components/BackButton';
 import 'bootstrap/dist/css/bootstrap.min.css'; 
 
 function MyModal() {
@@ -10,6 +11,9 @@ function MyModal() {
 
   return (
     <div style={{ textAlign: "center", padding: "20px" }}>
+      <BackButton />
+      <br />
+      <br />
       <h1 title="pageTitle">Modal</h1>
       <p>Learn to handle Modals in your application.</p>
       <Button variant="primary" onClick={handleShow}>

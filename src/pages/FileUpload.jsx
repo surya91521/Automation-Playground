@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import BackButton from '../components/BackButton';
 
 function FileUpload() {
   const [selectedFile, setSelectedFile] = useState(null);
@@ -34,6 +35,9 @@ function FileUpload() {
 
   return (
     <div className='container'>
+      <BackButton />
+      <br />
+      <br />  
       <h1 title="pageTitle">File Upload</h1>
       <p>Learn to handle file upload.</p>
       <br />
