@@ -44,7 +44,7 @@ function Iframe() {
                 <iframe
                   title="inner-frame"
                   style={{ width: '800px', height: '400px' }} 
-                  src="https://hianime.to/home" 
+                  src="https://en.wikipedia.org/wiki/Anime" 
                 ></iframe>
               </body>
             </html>

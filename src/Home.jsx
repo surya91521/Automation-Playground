@@ -14,6 +14,8 @@ const components = [
   { name: "RADIO BUTTONS", path: "radiobutton" },
   { name: "LOOPING", path: "looping" },
   { name: "FILE UPLOAD", path: "fileupload" },
+  { name: "NESTED SHADOW DOM", path: "nestedshadowdom" },
+  { name: "IFRAME SHADOW", path: "iframeshadow" },
   // Add more components as needed
 ];
 

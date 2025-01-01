@@ -12,6 +12,8 @@ import TypeText from "./pages/TypeText";
 import Looping from "./pages/Looping";
 import NewWindow from "./pages/NewWindow";
 import FileUpload from "./pages/FileUpload";
+import NestedShadowDom from "./pages/NestedShadowDom";
+import IframeShadow from "./pages/IframeShadow";
 // Import other components as needed
 
 function App() {
@@ -30,6 +32,8 @@ function App() {
         <Route path="/component/looping" element={<Looping />} />
         <Route path="/component/newwindow" element={<NewWindow />} />
         <Route path="/component/fileupload" element={<FileUpload />} />
+        <Route path="/component/nestedshadowdom" element={<NestedShadowDom />} />
+        <Route path="/component/iframeshadow" element={<IframeShadow />} />
         {/* Add more routes here */}
         <Route path="*" element={<h1>Page Not Found</h1>} />
       </Routes>
