@@ -6,6 +6,7 @@ import Alert from "./pages/Alert";
 import Dropdowns from "./pages/Dropdowns";
 import Iframe from "./pages/Iframe";
 import NewTab from "./pages/NewTab";
+import NewTabV2 from "./pages/NewTabV2";
 import RadioButton from "./pages/RadioButton";
 import ShadowDom from "./pages/ShadowDom";
 import TypeText from "./pages/TypeText";
@@ -28,6 +29,7 @@ function App() {
         <Route path="/component/dropdowns" element={<Dropdowns />} />
         <Route path="/component/iframe" element={<Iframe />} />
         <Route path="/component/newtab" element={<NewTab />} />
+        <Route path="/component/newtabv2" element={<NewTabV2 />} />
         <Route path="/component/radiobutton" element={<RadioButton />} />
         <Route path="/component/shadowdom" element={<ShadowDom />} />
         <Route path="/component/typetext" element={<TypeText />} />

@@ -12,6 +12,7 @@ const components = [
   { name: "TYPE TEXT", path: "typetext" },
   { name: "DROPDOWNS", path: "dropdowns" },
   { name: "NEW TAB", path: "newtab" },
+  { name: "NEW TAB V2", path: "newtabv2" },
   { name: "RADIO BUTTONS", path: "radiobutton" },
   { name: "LOOPING", path: "looping" },
   { name: "FILE UPLOAD", path: "fileupload" },
