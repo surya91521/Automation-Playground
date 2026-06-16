@@ -17,6 +17,8 @@ import NestedShadowDom from "./pages/NestedShadowDom";
 import IframeShadow from "./pages/IframeShadow";
 import DragDropIframe from "./pages/DragDropIframe";
 import DragDropShadowDom from "./pages/DragDropShadowDom";
+import ElementSelection from "./pages/ElementSelection";
+import ElementSelectionPageTwo from "./pages/ElementSelectionPageTwo";
 // Import other components as needed
 
 function App() {
@@ -40,6 +42,8 @@ function App() {
         <Route path="/component/iframeshadow" element={<IframeShadow />} />
         <Route path="/component/dragdropiframe" element={<DragDropIframe />} />
         <Route path="/component/dragdropshadowdom" element={<DragDropShadowDom />} />
+        <Route path="/component/elementselection" element={<ElementSelection />} />
+        <Route path="/component/elementselectionpagetwo" element={<ElementSelectionPageTwo />} />
         {/* Add more routes here */}
         <Route path="*" element={<h1>Page Not Found</h1>} />
       </Routes>
